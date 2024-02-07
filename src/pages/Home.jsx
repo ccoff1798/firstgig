@@ -5,17 +5,11 @@ const Home = () => {
 
   return (
     <div className="card bg-white card-rounded w-50">
-      <div className="card-header bg-dark text-center">
-        <h1>Welcome to Tech Matchup!</h1>
+      <div className="card-header bg-dark text-center text-light">
+        <h1>Welcome to Blue Mesa Point</h1>
       </div>
       <div className="card-body m-5">
         <h2>Home Page</h2>
-      </div>
-      {/* <iframe src="https://www.coloradodirectory.com/nationalparks/images/bluemesa.pdf" width="600" height="500" style="border: none;"></iframe> */}
-
-
-      <div className="card-footer text-center m-3">
-        <h2>Ready to create a new matchup?</h2>
       </div>
     </div>
   );

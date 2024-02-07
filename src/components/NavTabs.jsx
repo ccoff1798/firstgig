@@ -9,7 +9,6 @@ function NavTabs() {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link className="navbar-brand" to="/">Map App Name Still Working</Link>
       <button className="navbar-toggler" type="button" onClick={handleNavCollapse} aria-expanded={!isNavCollapsed} aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>

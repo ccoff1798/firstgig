@@ -3,6 +3,8 @@ import { Outlet } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import NavTabs from './components/NavTabs.jsx';
 import 'bootstrap/dist/css/bootstrap.css'
+import Header from './components/Header';
+import Footer from './components/Footer.jsx';
 
 const client = new ApolloClient({
   uri: '/graphql',
@@ -12,11 +14,15 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
+      <Header/>
       <NavTabs />
-      <div className="flex-column justify-center align-center min-100-vh bg-primary">
+      
 
         <Outlet />
-      </div>
+
+      <Footer/>
+
+
     </ApolloProvider>
   );
 }
