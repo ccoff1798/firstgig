@@ -21,6 +21,9 @@ function NavTabs() {
             <Link to="/about" className={currentPage === '/about' ? 'nav-link active' : 'nav-link'}>About</Link>
           </li>
           <li className="nav-item">
+            <Link to="/Rentals" className={currentPage === '/about' ? 'nav-link active' : 'nav-link'}>Rentals</Link>
+          </li>
+          <li className="nav-item">
             <Link to="/contact" className={currentPage === '/signup' ? 'nav-link active' : 'nav-link'}>Contact</Link>
           </li>
           {/* <li className="nav-item">}
