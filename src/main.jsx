@@ -7,6 +7,8 @@ import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import Rental from './pages/Rental';
 import NotFound from './pages/NotFound';
+import Map from './pages/Map';
+import Rules from './pages/Rules';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
       {
         path: '/Rentals',
         element: <Rental />
+      },
+      {
+        path:'/Map',
+        element: <Map />
+      },
+      {
+        path:'/Rules',
+        element: <Rules/>
       }
 
       //   path: '/matchup/:id',

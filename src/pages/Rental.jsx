@@ -1,23 +1,54 @@
+import React, { useState } from 'react';
+
+// Import your images
 import RV1 from '../assets/images/rvPhotos/RV1.jpg';
+import RV2 from '../assets/images/rvPhotos/RV2.jpg';
+import RV3 from '../assets/images/rvPhotos/RV3.jpg';
+import RV4 from '../assets/images/rvPhotos/RV4.jpg';
+import RV5 from '../assets/images/rvPhotos/RV5.jpg';
+import RV6 from '../assets/images/rvPhotos/RV6.jpg';
 
 const Rentals = () => {
+    const images = [RV1, RV2, RV3, RV4, RV5, RV6];
+    const [currentImage, setCurrentImage] = useState(0);
+
+    const nextImage = () => setCurrentImage((currentImage + 1) % images.length);
+    const prevImage = () => setCurrentImage((currentImage - 1 + images.length) % images.length);
 
     return (
-      <div>
-        <div >
-          <h1>Now offering Fully furnished on site RV's for Daily or Weekly Rental!</h1>
+        <div className="container mt-3">
+            <h1 className="text-center mb-4">Now offering Fully furnished on site RV's for Daily or Weekly Rental!</h1>
+            <div className="row">
+                <div className="col-md-8 d-flex justify-content-center flex-column align-items-center">
+                    <div>
+                        {/* Adjusted Fixed-size Image Container to use rem */}
+                        <div style={{ width: '31.25rem', height: '18.75rem', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                            <img src={images[currentImage]} alt={`RV ${currentImage + 1}`} className="img-fluid" />
+                        </div>
+                        {/* Navigation Buttons */}
+                        <div className="d-flex justify-content-between mt-2" style={{ width: '31.25rem' }}>
+                            <button className="btn btn-secondary" onClick={prevImage}>Prev</button>
+                            <button className="btn btn-secondary" onClick={nextImage}>Next</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-4">
+                    <div className="d-flex flex-column align-items-start">
+                        {images.map((image, index) => (
+                            <img key={index} src={image} alt={`Thumbnail ${index + 1}`} 
+                                 className={`img-thumbnail my-1 ${index === currentImage ? 'border-primary' : ''}`} 
+                                 onClick={() => setCurrentImage(index)} 
+                                 style={{ maxWidth: '6.25rem', cursor: 'pointer' }} />
+                        ))}
+                    </div>
+                </div>
+            </div>
+            <div className="text-center mt-4">
+                <h2>Interested In Booking Your Stay?</h2>
+                <p>Email: <a href="mailto:Info@BlueMesaPoint.com">Info@BlueMesaPoint.com</a></p>
+            </div>
         </div>
-        <div className="card-body m-5">
-          <h2>Interested In Booking Your Stay?</h2>
-          <li>Email: <a href="mailto:Info@BlueMesaPoint.com">Info@BlueMesaPoint.com</a></li>
-        <div className="card-footer text-center m-3">
-          <h2>Ready to create a new matchup?</h2>
-        </div>
-        
-      </div>
-    </div>
     );
-  };
-  
-  export default Rentals;
-  
+};
+
+export default Rentals;

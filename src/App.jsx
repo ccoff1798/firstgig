@@ -18,7 +18,7 @@ function App() {
       <NavTabs />
       
 
-        <Outlet />
+      <Outlet />
 
       <Footer/>
 
