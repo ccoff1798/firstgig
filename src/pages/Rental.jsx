@@ -21,14 +21,13 @@ const Rentals = () => {
             <div className="row">
                 <div className="col-md-8 d-flex justify-content-center flex-column align-items-center">
                     <div>
-                        {/* Adjusted Fixed-size Image Container to use rem */}
-                        <div style={{ width: '31.25rem', height: '18.75rem', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
-                            <img src={images[currentImage]} alt={`RV ${currentImage + 1}`} className="img-fluid" />
+                        <div style={{ width: '31.25rem', height: '20rem', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                            <img src={images[currentImage]} alt={`RV ${currentImage + 1}`} className="img-fluid shadow-black" />
                         </div>
                         {/* Navigation Buttons */}
                         <div className="d-flex justify-content-between mt-2" style={{ width: '31.25rem' }}>
-                            <button className="btn btn-secondary" onClick={prevImage}>Prev</button>
-                            <button className="btn btn-secondary" onClick={nextImage}>Next</button>
+                            <button className="btn btn-secondary shadow-black" onClick={prevImage}>Prev</button>
+                            <button className="btn btn-secondary shadow-black" onClick={nextImage}>Next</button>
                         </div>
                     </div>
                 </div>
