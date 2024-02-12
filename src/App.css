@@ -102,3 +102,18 @@ nav{
 .force-left{
   position: absolute;
 }
+header{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.header-title{
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: #0b441055 4px 4px 0px;
+  justify-self: bottom;
+  margin-top: auto;
+}
+.height-cap{
+  height: 5rem;
+}
