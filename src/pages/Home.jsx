@@ -6,8 +6,8 @@ import BlueMesaRes1 from '../assets/images/BlueMesaRes1.jpg';
 const Home = () => {
 
   return (
-    <div className="card bg-white card-rounded">
-      <div className="card-header bg-dark text-center text-light">
+    <div className="main-body card card-rounded">
+      <div className="card-header  text-center">
         <h1>Welcome to Blue Mesa Point</h1>
       </div>
       <div className="card-body m-5">

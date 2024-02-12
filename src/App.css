@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-image: linear-gradient(blue, orange, green);
+  background-image: linear-gradient(lightblue 10%, orange 30%, green 40%);
 }
 
 .logo {
@@ -34,9 +34,6 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
 
 .read-the-docs {
   color: #888;
@@ -72,9 +69,18 @@ nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
+  border-radius: 10px;
+}
+
+span{
+  padding: 0.5rem;
   border-radius: 10px;
   box-shadow: 0px 0px 5px black;
+  background-color: #0b4410;
+  color: white;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .gradient{
   background-image: linear-gradient(silver, gray, rgb(57, 55, 55));
@@ -108,12 +114,41 @@ header{
   margin-bottom: 1rem;
 }
 .header-title{
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   text-shadow: #0b441055 4px 4px 0px;
   justify-self: bottom;
   margin-top: auto;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
 }
 .height-cap{
   height: 5rem;
+}
+
+.display-none{
+  display: none;
+}
+.card-body{
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: silver;
+  color: green;
+}
+.main-body{
+  background-color: #0b4410;
+}
+.pad-thicc{
+  padding: 2rem;
+  margin-top: auto;
+  margin: auto;
+}
+.margin-auto{
+  margin: auto;
+}
+
+.margin-1{
+  margin: 1rem;
 }
