@@ -8,7 +8,7 @@ function NavTabs() {
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
   return (
-    <nav className="navbar navbar-expand-lg  justify-start display-none">
+    <nav className="navbar navbar-expand-lg justify-start display-none">
       <button className="navbar-toggler" type="button" onClick={handleNavCollapse} aria-expanded={!isNavCollapsed} aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -21,16 +21,16 @@ function NavTabs() {
             <Link to="/about" className={currentPage === '/about' ? 'nav-link active' : 'nav-link'}>About</Link>
           </li>
           <li className="nav-item">
-            <Link to="/Rentals" className={currentPage === '/about' ? 'nav-link active' : 'nav-link'}>Rentals</Link>
+            <Link to="/Rentals" className={currentPage === '/Rentals' ? 'nav-link active' : 'nav-link'}>Rentals</Link>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className={currentPage === '/signup' ? 'nav-link active' : 'nav-link'}>Contact</Link>
+            <Link to="/contact" className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'}>Contact</Link>
           </li>
           <li className="nav-item">
-            <Link to="/map" className={currentPage === '/signup' ? 'nav-link active' : 'nav-link'}>Map of Area </Link>
+            <Link to="/map" className={currentPage === '/map' ? 'nav-link active' : 'nav-link'}>Map of Area </Link>
           </li>
           <li className="nav-item">
-            <Link to="/Rules" className={currentPage === '/signup' ? 'nav-link active' : 'nav-link'}>Rules </Link>
+            <Link to="/Rules" className={currentPage === '/Rules' ? 'nav-link active' : 'nav-link'}>Rules </Link>
           </li>
         </ul>
       </div>

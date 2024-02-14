@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/client';
 const Contact = () => {
 
   return (
-    <div>
+    <div className='fill-page big-div'>
       <div >
         <h1>Contact Us!</h1>
       </div>
