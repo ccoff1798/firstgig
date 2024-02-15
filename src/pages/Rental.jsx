@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 // Import your images
-import RV1 from '../assets/images/rvPhotos/RV1.jpg';
-import RV2 from '../assets/images/rvPhotos/RV2.jpg';
-import RV3 from '../assets/images/rvPhotos/RV3.jpg';
-import RV4 from '../assets/images/rvPhotos/RV4.jpg';
-import RV5 from '../assets/images/rvPhotos/RV5.jpg';
-import RV6 from '../assets/images/rvPhotos/RV6.jpg';
+import RV1 from '../assets/images/rvPhotos/rv1.jpg';
+import RV2 from '../assets/images/rvPhotos/rv2.jpg';
+import RV3 from '../assets/images/rvPhotos/rv3.jpg';
+import RV4 from '../assets/images/rvPhotos/rv4.jpg';
+import RV5 from '../assets/images/rvPhotos/rv5.jpg';
+import RV6 from '../assets/images/rvPhotos/rv6.jpg';
 
 const Rentals = () => {
     const images = [RV1, RV2, RV3, RV4, RV5, RV6];
